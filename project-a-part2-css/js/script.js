@@ -5,4 +5,5 @@ function setup() {
 
 function draw() {
     background(225);
+    circle(random(width), random(height), 100);
 }
