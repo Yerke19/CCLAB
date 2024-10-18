@@ -13,7 +13,7 @@ let spdDivider = 7;
 let x, y, spdX, spdY;
 
 function setup() {
-    createCanvas(800, 500);
+    let canvas = createCanvas(800, 500);
     canvas.parent("p5-canvas-container");
     angleMode(DEGREES);
     // Initialize random colors for each star
