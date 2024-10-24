@@ -101,12 +101,12 @@ function draw() {
     }
 
     // 3600
-    pop();
+    // pop();
 
-    noStroke();
-    fill(255);
-    text(round(frameRate()), 10, 20);
-    text(yTime, 10, 40);
+    // noStroke();
+    // fill(255);
+    // text(round(frameRate()), 10, 20);
+    // text(yTime, 10, 40);
 
     yTime++;
 }
