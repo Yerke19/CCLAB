@@ -4,7 +4,8 @@ let targetX, targetY, lerpAmount;
 let bgAlpha = 255;
 
 function setup() {
-    createCanvas(800, 500);
+    let canvas = createCanvas(800, 500);
+    canvas.parent("p5-canvas-container");
     background(0, 51, 51);
     angleMode(DEGREES);
 
