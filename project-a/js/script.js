@@ -65,7 +65,7 @@ function draw() {
         let radAmp = map(yTime, 1800, 2700, 5, 250, true);
         star(creatureX, creatureY, rad, radAmp, 8, 0.5);
 
-        let radBlue = map(yTime, 2000, 2500, 1, 0, true);
+        let radBlue = map(yTime, 2000, 2200, 1, 0, true);
         drawStar3(creatureX, creatureY, radBlue);
     } else if (yTime < 3600) {
         //
@@ -103,10 +103,10 @@ function draw() {
     // 3600
     pop();
 
-    //noStroke();
-    //fill(255);
-    //text(round(frameRate()), 10, 20);
-    //text(yTime, 10, 40);
+    noStroke();
+    fill(255);
+    text(round(frameRate()), 10, 20);
+    text(yTime, 10, 40);
 
     yTime++;
 }
