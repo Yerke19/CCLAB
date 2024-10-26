@@ -22,7 +22,7 @@ function draw() {
     push();
     //blendMode(ADD);
 
-    // move the creature using lerp();
+    // Move the creature using lerp();
     creatureX = lerp(creatureX, targetX, lerpAmount);
     creatureY = lerp(creatureY, targetY, lerpAmount);
 
@@ -46,7 +46,7 @@ function draw() {
         }
         drawStar2(creatureX, creatureY, radStar2);
 
-        // draw colorful
+
     } else if (yTime < 1800) {
         bgAlpha = map(yTime, 900, 1800, 10, 50, true);
 
@@ -68,7 +68,7 @@ function draw() {
         let radBlue = map(yTime, 2000, 2200, 1, 0, true);
         drawStar3(creatureX, creatureY, radBlue);
     } else if (yTime < 3600) {
-        //
+
         bgAlpha = map(yTime, 2900, 3600, 50, 10, true);
 
         let rad = map(yTime, 2700, 3600, 5, 600);
@@ -116,7 +116,7 @@ function mousePressed() {
     targetY = mouseY;
 }
 
-// star and rotation
+// Star and rotation
 function star(originX, originY, rad, radAmp, num = 5, rotSpd = 0.5) {
     push();
     translate(originX, originY);
@@ -159,10 +159,10 @@ function star(originX, originY, rad, radAmp, num = 5, rotSpd = 0.5) {
 function drawStar2(x, y, scl) {
     push();
     translate(x, y);
-    // rotate(frameCount * 0.8);
+    // Rotate(frameCount * 0.8);
     scale(scl);
-    // Increase rotation speed over time
-    let rotationSpeed = map(yTime, 0, 3600, 0.1, 3); // Map time to a speed value
+    // Increase speed of rotation 
+    let rotationSpeed = map(yTime, 0, 3600, 0.1, 3);
     rotate(frameCount * -rotationSpeed);
     stroke(120, 60, 255);
     //strokeWeight(2);
@@ -216,7 +216,7 @@ function drawStar4(x, y, scl) {
         push();
         rotate(angle);
 
-        // M: let's make the x value of the ellipse more dynamic
+
         let xAdj = sin(frameCount * 1.5) * 50;
 
         noFill();
