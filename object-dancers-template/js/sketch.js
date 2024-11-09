@@ -49,8 +49,6 @@ class YerkeDancer {
   }
 
   update() {
-    // update properties here to achieve
-    // your dancer's desired moves and behaviour
     // arms go up and down
     this.armAngle += this.direction * this.speed;
     if (this.armAngle > this.amplitude || this.armAngle < -this.amplitude) {
@@ -61,19 +59,13 @@ class YerkeDancer {
   }
 
   display() {
-    // the push and pop, along with the translate 
-    // places your whole dancer object at this.x and this.y.
-    // you may change its position on line 19 to see the effect.
-
     push();
     //body
     translate(this.x, this.y + this.bodyMove);
-
     this.drawBody();
     // arms
     this.drawLimb(40, 0, radians(-10 + this.armAngle)); // right arm
     this.drawLimb(-40, 0, radians(190 - this.armAngle)); // left arm
-
     // this.drawReferenceShapes();
     pop();
   }
