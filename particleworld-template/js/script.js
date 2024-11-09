@@ -34,7 +34,7 @@ function draw() {
 function mousePressed() {
   for (let i = 0; i < particles.length; i++) {
     if (particles[i].isClicked()) {
-      particles.splice(i, 1); // Remove the particle from the array
+      particles.splice(i, 1); // removing particles from the array
       disappear;
     }
   }
