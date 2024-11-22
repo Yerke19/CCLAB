@@ -1,0 +1,39 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.main-container {
+  background-color: cyan;
+  width: 100vw height: 100vh display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title-container {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 150px;
+  margin: 100px aut
+}
+
+.main-title-box {
+  background-color: aquamarine;
+
+}
+
+.start-link {
+  background-color: red;
+}
