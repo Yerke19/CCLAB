@@ -16,7 +16,7 @@ canvas {
 }
 
 a {
-  color: rgb(54, 73, 244);
+  color: black;
   text-decoration: none;
 }
 
@@ -25,9 +25,8 @@ a:hover {
   text-decoration: overline;
 }
 
-
 .main-container {
-  background-color: pink;
+  /* background-color: darkcyan; */
 
   width: 100vw;
   height: 100vh;
@@ -42,31 +41,18 @@ a:hover {
   width: 500px;
   /* height: 150px; */
   text-align: center;
+  padding-top: 20px;
 }
 
 .main-title-box {
   /* background-color: aquamarine; */
-  font-size: 50px;
+  font-size: 30px;
   /* padding: 20px 0; */
   /* line-height: 20px; */
-  padding: 20px 0;
+  padding: -20px 0;
 }
 
 .main-link-box {
   /* background-color: brown; */
-  padding: 10px;
-  font-size: 35px;
-}
-
-#p5-canvas-container {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-menu {
-  /* padding: 20px 0; */
-  font-size: 30px;
-
+  padding: 150px 0;
 }

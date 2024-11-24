@@ -52,8 +52,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 
 .main-title-container {
@@ -66,6 +64,9 @@ a:hover {
 .main-title-box {
   /* background-color: aquamarine; */
   font-size: 50px;
+  /* padding: 20px 0; */
+  /* line-height: 20px; */
+  padding: 20px 0;
 }
 
 .main-link-box {
@@ -81,10 +82,13 @@ a:hover {
   align-items: center;
 }
 
-.canvas-background {
-  position: fixed;
-  left: 0;
-  top: 0;
+.footer {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.history-container {
+  background-color: burlywood;
 
   width: 100vw;
   height: 100vh;
@@ -92,31 +96,34 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px auto;
 
-  z-index: -1;
 }
 
-.flexbox-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-box {
-  background-color: cadetblue;
-  width: 180px;
-  height: 300px;
-  margin: 20px;
-}
-
-
-
-
-.footer {
+.history-title-container {
+  /* background-color: cornflowerblue; */
+  padding: 10px 0;
+  width: 500px;
+  /* height: 150px; */
   text-align: center;
-  margin: 30px 0;
+  position: relative;
+  top: -200px;
 }
 
+.history-title-box {
+  /* background-color: aquamarine; */
+  font-size: 35px;
+
+  /* padding: 20px 0; */
+  /* line-height: 20px; */
+  /* padding: 10px 0; */
+}
+
+.history-link-box {
+  /* background-color: brown; */
+  padding: 10px;
+  font-size: 25px;
+}
 
 .final-title-box {
   /* background-color: aquamarine; */

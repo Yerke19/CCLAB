@@ -70,3 +70,50 @@ a:hover {
   font-size: 30px;
 
 }
+
+
+.history-container {
+  background-color: burlywood;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px auto;
+
+}
+
+.history-title-container {
+  /* background-color: cornflowerblue; */
+  padding: 10px 0;
+  width: 500px;
+  /* height: 150px; */
+  text-align: center;
+  position: relative;
+  top: -200px;
+}
+
+.history-title-box {
+  /* background-color: aquamarine; */
+  font-size: 35px;
+
+  /* padding: 20px 0; */
+  /* line-height: 20px; */
+  /* padding: 10px 0; */
+}
+
+.history-link-box {
+  /* background-color: brown; */
+  padding: 10px;
+  font-size: 25px;
+}
+
+.final-title-box {
+  /* background-color: aquamarine; */
+  font-size: 30px;
+  /* padding: 20px 0; */
+  /* line-height: 20px; */
+  padding: 20px 0;
+}

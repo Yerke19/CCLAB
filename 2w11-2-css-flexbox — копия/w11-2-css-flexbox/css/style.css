@@ -35,6 +35,7 @@ body {
 
 
 .wrapper {
+  background-color: pink;
   max-width: 800px;
   margin: 100px auto;
 }
