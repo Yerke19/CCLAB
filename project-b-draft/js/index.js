@@ -4,39 +4,33 @@ function setup() {
 }
 
 function draw() {
-  //color
-  //range: 0 to 255
-  // (w) // white
-  // (w,a) // white, alpha
-  // (r,g,b) // red,green,blue
-  // (?,?,?,?)
   background(255, 192, 203);
 
-  circle(random(width), random(height), random(10, 30));
+  // Call your character drawing function
   drawYerke();
+
+  // Call the sun drawing function
+  drawRotatingSun(150, 100, 40);
 }
 
 function drawYerke() {
   push();
   translate(150, 100);
-  //sun
-  // fill(255, 217, 25);
-  // circle(50, 50, 80);
 
-  // hair
+  // Hair
   fill(51, 26, 0);
   rect(190, 110, 120, 120, 40);
 
-  //face
+  // Face
   fill(255, 219, 172);
   noStroke();
   ellipse(250, 175, 80, 100);
 
-  //bangs
+  // Bangs
   fill(51, 26, 0);
   rect(214, 113, 72, 40, 0, 0, 30, 0);
 
-  //eyes
+  // Eyes
   fill(255);
   ellipse(230, 160, 15, 10);
   ellipse(270, 160, 15, 10);
@@ -45,47 +39,47 @@ function drawYerke() {
   ellipse(225, 180, 15, 12);
   ellipse(275, 180, 15, 12);
 
-  //blush
+  // Blush
   fill(66, 44, 22);
   circle(230, 160, 10);
   circle(270, 160, 10);
 
-  //nose
+  // Nose
   fill(222, 184, 135);
   circle(width / 2 - 5, height / 2 - 15, 2);
   circle(width / 2 + 5, height / 2 - 15, 2);
 
-  // eye pupils
+  // Eye pupils
   fill(255);
   circle(228, 158, 2);
   circle(268, 158, 2);
 
-  //lips
+  // Lips
   noFill();
   stroke(229, 87, 139);
   arc(250, 190, 45, 35, 120, 103);
 
-  //neck
+  // Neck
   fill(255, 219, 172);
   noStroke();
   rect(241, 221, 20, 25);
 
-  //ears
+  // Ears
   fill(255, 219, 172);
   ellipse(210, 180, 10, 18);
   ellipse(290, 180, 10, 18);
 
-  //earrings
+  // Earrings
   fill(210, 105, 30);
   circle(209, 188, 3);
   circle(291, 188, 3);
 
-  //dress
+  // Dress
   fill(77, 0, 64);
   noStroke();
   rect(204, 242, 95, 160, 30, 30, 0, 0);
 
-  //flower petals
+  // Flower petals
   fill(255, 0, 255);
   circle(244, 303, 11);
   circle(245, 295, 11);
@@ -99,13 +93,13 @@ function drawYerke() {
   circle(246, 306, 11);
   circle(250, 306, 15);
 
-  //flower middle
+  // Flower middle
   fill(255, 255, 25);
   circle(255, 300, 15);
 
-  //flower stem
+  // Flower stem
   push();
-  stroke(" green");
+  stroke("green");
   strokeWeight(2);
   line(258, 308, 260, 355);
   pop();
@@ -113,5 +107,38 @@ function drawYerke() {
   fill("green");
   ellipse(256, 330, 7, 13);
   ellipse(262, 330, 7, 13);
+  pop();
+}
+
+// Draw the rotating sun
+function drawRotatingSun(x, y, radius) {
+  push();
+  translate(x, y);
+  radius = 45;
+  // Draw sun circle
+  fill(253, 225, 45);
+  noStroke();
+  circle(0, 0, radius);
+
+  // Draw rotating rays
+
+  strokeWeight(3);
+  let numRays = 6;
+  let angle = TWO_PI / numRays;
+  for (let i = 0; i < numRays; i++) {
+    let sinVal = map(sin(frameCount * 0.1), -1, 1, 10, 30)
+    let cosVal = map(cos(frameCount * 0.1), -1, 1, 10, 30)
+    push();
+    stroke(253, 225, 45);
+    rotate(frameCount * 0.01 + i * angle); // Add rotation effect
+    line(radius / 2 + 5, 0, radius / 2 + sinVal, 0); // Draw rays
+    pop();
+
+    push();
+    stroke(252, 180, 31);
+    rotate(frameCount * 0.01 + (i + 0.5) * angle); // Add rotation effect
+    line(radius / 2 + 5, 0, radius / 2 + cosVal, 0); // Draw rays
+    pop();
+  }
   pop();
 }
