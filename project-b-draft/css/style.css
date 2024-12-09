@@ -6,6 +6,8 @@ h3,
 h4,
 h5,
 h6,
+
+
 p {
   margin: 0;
   padding: 0;
@@ -14,6 +16,7 @@ p {
 
 h1 {
   font-size: 50px;
+  font-family: 'Edu AU VIC WA NT Pre', sans-serif;
 }
 
 h2 {
@@ -22,12 +25,14 @@ h2 {
 
 h3 {
   font-size: 30px;
+  font-family: 'Playwrite IE', sans-serif;
 }
 
 
 body {
   background-color: pink;
   /* cursor: url('../assets/yerke.png') 100 100, auto; */
+  font-family: 'Aclonica', sans-serif;
 }
 
 canvas {
@@ -37,6 +42,7 @@ canvas {
 a {
   color: rgb(255, 57, 67);
   text-decoration: none;
+  font-family: 'Aclonica', sans-serif;
 }
 
 a:hover {
@@ -67,6 +73,9 @@ a:hover {
 .main-title-box {
   /* background-color: aquamarine; */
   font-size: 50px;
+  font-family: 'Aclonica', sans-serif;
+  /* Optional: Change font if needed */
+
 }
 
 .main-link-box {
@@ -74,6 +83,23 @@ a:hover {
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 30px;
+  font-family: 'Aclonica', sans-serif;
+  /* Optional: Change font if needed */
+
+}
+
+.description-box {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  /* Adjust text color */
+  font-family: 'Aclonica', sans-serif;
+  /* Optional: Change font if needed */
+  margin-bottom: -100px;
+  z-index: 10;
 }
 
 #p5-canvas-container {
@@ -117,6 +143,8 @@ a:hover {
 .info {
 
   margin: 30px 0;
+
+
 }
 
 
@@ -126,6 +154,10 @@ a:hover {
   /* padding: 20px 0; */
   /* line-height: 20px; */
   padding: 20px 0;
+  font-family: 'Aclonica', sans-serif;
+  /* Optional: Change font if needed */
+
+
 }
 
 img {
@@ -172,8 +204,9 @@ img {
 
 #yerke-container {
   /* display: none; */
-  width: 150px;
-  height: 200px;
+  /* width: 150px; */
+  width: 5vw;
+  /* height: 200px; */
   /* background-color: blueviolet; */
 
   position: absolute;
@@ -185,20 +218,68 @@ img {
 #music-yurt-txt {
   position: absolute;
   top: 21vh;
-  left: 10vw;
+  left: 8vw;
   background-color: rgba(221, 217, 214, 0.584);
+  font-family: 'Aclonica', sans-serif;
+  /* Optional: Change font if needed */
+
 }
 
 #costume-yurt-txt {
   position: absolute;
   top: 21vh;
-  right: 8vw;
+  right: 5vw;
   background-color: rgba(221, 217, 214, 0.584);
+  font-family: 'Aclonica', sans-serif;
+  /* Optional: Change font if needed */
+
 }
 
 #food-yurt-txt {
   position: absolute;
   top: 21vh;
-  left: 11vw;
+  left: 10vw;
   background-color: rgba(221, 217, 214, 0.584);
+  font-family: 'Aclonica', sans-serif;
+  /* Optional: Change font if needed */
+
+}
+
+.aclonica-regular {
+  font-family: "Aclonica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.costume-box {
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#costume-00 {
+  background-image: url("../assets/yerke00.png");
+}
+
+#costume-00:hover {
+  background-image: url("../assets/yerke00-h.png");
+}
+
+#costume-01 {
+  background-image: url("../assets/yerke01.png");
+}
+
+#costume-01:hover {
+  background-image: url("../assets/yerke01-h.png");
+}
+
+#costume-02 {
+  background-image: url("../assets/yerke02.png");
+}
+
+#costume-02:hover {
+  background-image: url("../assets/yerke02-h.png");
 }

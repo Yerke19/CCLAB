@@ -1,7 +1,14 @@
-function setup() {
+let bgMusic;
+
+function preload() {
+  bgMusic = loadSound("assets/nauryz.mp3");
+} function setup() {
   let canvas = createCanvas(800, 500);
   canvas.parent("p5-canvas-container");
+  bgMusic.loop();
+
 }
+
 
 function draw() {
   background(255, 192, 203);
