@@ -17,7 +17,7 @@ function draw() {
   drawYerke();
 
   // Call the sun drawing function
-  drawRotatingSun(150, 100, 40);
+  drawRotatingSun(10, 10, 40);;
 }
 
 function drawYerke() {
@@ -121,7 +121,7 @@ function drawYerke() {
 function drawRotatingSun(x, y, radius) {
   push();
   translate(x, y);
-  radius = 45;
+  radius = 80;
   // Draw sun circle
   fill(253, 225, 45);
   noStroke();

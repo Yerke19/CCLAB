@@ -89,7 +89,6 @@ a:hover {
   margin-top: 15px;
   margin-bottom: 30px;
   font-family: 'Aclonica', sans-serif;
-  /* Optional: Change font if needed */
 
 }
 
@@ -100,10 +99,9 @@ a:hover {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  /* Adjust text color */
   font-family: 'Aclonica', sans-serif;
-  /* Optional: Change font if needed */
-  margin-bottom: -100px;
+  margin-bottom: -190px;
+  /* margin-right: -20px; */
   z-index: 10;
 }
 

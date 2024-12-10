@@ -1,15 +1,15 @@
 let foodLocations = [
-  { x: 352, y: 181, rad: 25, name: "Nauryz Kozhe", info: "7 ingredients" },
-  { x: 290, y: 262, rad: 12, name: "Kumyz", info: "horse milk" },
-  { x: 383, y: 280, rad: 20, name: "Kurt", info: "salty snack" },
-  { x: 435, y: 265, rad: 20, name: "Baursak", info: "fried dough" },
-  { x: 222.06060409545898, y: 272.12121200561523, rad: 10, name: "Tea", info: "Not important" },
-  { x: 169.06060409545898, y: 290.12121200561523, rad: 10, name: "Tea", info: "Not important" },
-  { x: 237.06060409545898, y: 303.12121200561523, rad: 10, name: "Tea", info: "Not important" },
-  { x: 325.060604095459, y: 310.12121200561523, rad: 10, name: "Tea", info: "Not important" },
-  { x: 417.060604095459, y: 308.12121200561523, rad: 10, name: "Tea", info: "Not important" },
-  { x: 489.060604095459, y: 307.12121200561523, rad: 10, name: "Tea", info: "Not important" },
-  { x: 557.060604095459, y: 297.12121200561523, rad: 10, name: "Tea", info: "Not important" },
+  { x: 352, y: 181, rad: 25, name: "Nauryz Kozhe", info: " Kozhe means soup and consists of 7 ingredients: milk, meat, oil, millet, rice, raisins, corn. 7 is a sacred number" },
+  { x: 290, y: 262, rad: 12, name: "Kumyz", info: " A traditional fermented dairy product made from horse milk" },
+  { x: 383, y: 280, rad: 20, name: "Kurt", info: "An ancient fermented salty milk product. It saved lives of Kazakh people during Great Famine in 20th century" },
+  { x: 435, y: 265, rad: 20, name: "Baursak", info: "A unique fried bread with a puffy appearance consisting of flour, milk, salt, sugar, eggs, butter, and yeast" },
+  { x: 222.06060409545898, y: 272.12121200561523, rad: 10, name: "Tea", info: "Kazakh people LOVE tea!" },
+  { x: 169.06060409545898, y: 290.12121200561523, rad: 10, name: "Tea", info: "If you pour full cup of tea for someone, then it means the person is not welcomed" },
+  { x: 237.06060409545898, y: 303.12121200561523, rad: 10, name: "Tea", info: "Kazakhs drink tea for every meal of the day, mainly black and milk" },
+  { x: 325.060604095459, y: 310.12121200561523, rad: 10, name: "Tea", info: "Still tea" },
+  { x: 417.060604095459, y: 308.12121200561523, rad: 10, name: "Tea", info: "Tea in Kazakhstan is very addictive, you drink cup after cup..." },
+  { x: 489.060604095459, y: 307.12121200561523, rad: 10, name: "Tea", info: "And cannot stop!" },
+  { x: 557.060604095459, y: 297.12121200561523, rad: 10, name: "Tea", info: "Tea in Kazakh is called shai. Kazakh people drink hot tea even in summer" },
 ];
 
 
@@ -76,7 +76,7 @@ class Button {
       push();
       translate(mouseX, mouseY);
       textSize(20);
-      stroke(255, 0, 0);
+      stroke(120, 0, 0);
       fill(255);
       text(this.name, 30, 0);
       pop();
