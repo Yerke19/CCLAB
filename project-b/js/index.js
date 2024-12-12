@@ -11,13 +11,13 @@ function preload() {
 
 
 function draw() {
-  background(255, 192, 203);
+  background(255, 193, 204);
 
   // Call your character drawing function
   drawYerke();
 
   // Call the sun drawing function
-  drawRotatingSun(10, 10, 40);;
+  drawRotatingSun(45, 50, 40);
 }
 
 function drawYerke() {
@@ -121,7 +121,7 @@ function drawYerke() {
 function drawRotatingSun(x, y, radius) {
   push();
   translate(x, y);
-  radius = 80;
+  radius = 65;
   // Draw sun circle
   fill(253, 225, 45);
   noStroke();

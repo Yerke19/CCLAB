@@ -10,14 +10,12 @@ function preload() {
 function setup() {
   let canvas = createCanvas(800, 500);
   canvas.parent("p5-canvas-container");
-  document.getElementById("p5-canvas-container").style.cursor = "none";
+  document.getElementById("p5-canvas-container").style.cursor = "none"; // Initially hide cursor
 }
 
-
 function draw() {
-  background('#FFA6F1');
+  background(' #FFE6A7');
 
-  //  text for KOBYZ
   push();
   textSize(32);
   textAlign(CENTER, CENTER);
@@ -28,7 +26,6 @@ function draw() {
   }
   pop();
 
-  //  text for DOMBRA
   push();
   textSize(32);
   textAlign(CENTER, CENTER);
@@ -47,63 +44,52 @@ function draw() {
   line(width / 2, 0, width / 2, height);
 }
 
-
 function onMouse() {
-  // rect(200, 0, 50, height);
-
   if (mouseX < width / 2) {
-    //bow
+    // Hide the cursor when on "KOBYZ"
+    document.getElementById("p5-canvas-container").style.cursor = "none";
+
     push();
     noFill();
-    // Horizontal arc moving with the mouse
     stroke("#9F5F1E");
     strokeWeight(4);
-    arc(mouseX, mouseY, 150, 50, 0, PI);
-
-    // Horizontal line moving with the mouse
-    stroke("grey");
+    arc(mouseX, mouseY, 150, 50, 0, PI); // Arc
+    stroke("grey"); // Grey line
     strokeWeight(1);
-    line(mouseX - 75, mouseY, mouseX + 75, mouseY); // Line matches arc's width
+    line(mouseX - 75, mouseY, mouseX + 75, mouseY); // Line
     pop();
   } else {
-    circle(mouseX, mouseY, 10);
+    // Show the pointer cursor when on "DOMBRA"
+    document.getElementById("p5-canvas-container").style.cursor = "pointer";
+    // circle(mouseX, mouseY, 10);
   }
 
-  //MANAGE SOUND
+  // Manage sounds based on mouse position
   if (kobyzAudio.isPlaying() == false && mouseX < width / 2 && kobyzPlayed == false && mouseX > 150 && mouseX < 330 && mouseY > 150 && mouseY < 350) {
-    // kobyzAudio.play();
     kobyzAudio.loop();
     kobyzPlayed = true;
-
   } else if (mouseX >= width / 2 || (mouseX <= 150 || mouseX >= 330) || (mouseY <= 150 || mouseY >= 350)) {
     kobyzAudio.pause();
     kobyzPlayed = false;
-
   }
 
   if (dombraAudio.isPlaying() == false && mouseX >= width / 2 && dombraPlayed == false && mouseX > 545 && mouseX < 565 && mouseY > 150 && mouseY < 370) {
-    // dombraAudio.play();
     dombraAudio.loop();
     dombraPlayed = true;
-    // document.getElementById("p5-canvas-container").style.cursor = "pointer";
   } else if (mouseX < width / 2 || (mouseX <= 545 || mouseX >= 565) || (mouseY <= 150 || mouseY >= 370)) {
     dombraAudio.pause();
     dombraPlayed = false;
-    // document.getElementById("p5-canvas-container").style.cursor = "default";
   }
 }
 
 function dombra() {
-  // dombra
   push();
-
   fill("#C67423");
   noStroke();
   ellipse(550, 330, 80, 100);
   pop();
   push();
   stroke("#C67423");
-
   strokeWeight(15);
   line(550, 150, 550, 290);
   pop();
@@ -112,7 +98,6 @@ function dombra() {
   noStroke();
   circle(550, 320, 15);
   rect(538, 350, 25, 5);
-
   pop();
   push();
   noStroke();
@@ -132,7 +117,6 @@ function kobyz() {
   push();
   translate(-150, 0);
 
-  // Style the line.
   push();
   fill(102, 51, 0);
   rect(370, 130, 60, 10);
@@ -164,7 +148,6 @@ function kobyz() {
   line(405, 133, 405, 350);
   pop();
 
-  // Arc and line moving with the mouse
   push();
   noFill();
   stroke("#9F5F1E");
@@ -172,5 +155,3 @@ function kobyz() {
   pop();
   pop();
 }
-
-

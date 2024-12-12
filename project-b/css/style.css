@@ -14,25 +14,39 @@ p {
   font-weight: normal;
 }
 
+/* body {
+  height: 100%;
+} */
+
 h1 {
   font-size: 50px;
-  font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+  font-family: "Marmelad", sans-serif;
+
+  /* font-weight: bold; */
 }
 
 h2 {
+  /* Hides all h2 elements */
+
   font-size: 40px;
+
 }
 
 h3 {
   font-size: 30px;
-  font-family: 'Playwrite IE', sans-serif;
+  font-family: "Marmelad", sans-serif;
+
 }
 
 
 body {
-  background-color: pink;
+  background-color: rgb(255, 193, 204);
   /* cursor: url('../assets/yerke.png') 100 100, auto; */
-  font-family: 'Aclonica', sans-serif;
+  font-family: "IBM Plex Serif", serif;
+
+
+
+  /* font-family: 'Aclonica', sans-serif; */
 }
 
 canvas {
@@ -42,7 +56,8 @@ canvas {
 a {
   color: rgb(255, 57, 67);
   text-decoration: none;
-  font-family: 'Aclonica', sans-serif;
+  font-family: "IBM Plex Serif", serif;
+
 }
 
 a:hover {
@@ -53,14 +68,18 @@ a:hover {
 
 .main-container {
   /* background-color: blueviolet; */
-  width: 800px;
-  margin: 50px auto 0 auto;
+  /* width: 800px; */
+  /* margin: 50px auto 0 auto; */
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+#landing-page {
+  height: 100vh;
 }
 
 #yerke-img {
@@ -73,13 +92,19 @@ a:hover {
   /* width: 500px; */
   /* height: 150px; */
   text-align: center;
+  padding-top: 15px;
+  /* Adjust this value to lower the title */
+
 }
 
 .main-title-box {
   /* background-color: aquamarine; */
   font-size: 50px;
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Forum", serif;
   /* Optional: Change font if needed */
+  margin-top: 15px;
+  /* Moves the title lower */
+
 
 }
 
@@ -88,7 +113,8 @@ a:hover {
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 30px;
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Forum", serif;
+
 
 }
 
@@ -98,17 +124,18 @@ a:hover {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
-  font-family: 'Aclonica', sans-serif;
+  color: black;
+  font-family: "Forum", serif;
   margin-bottom: -190px;
   /* margin-right: -20px; */
   z-index: 10;
 }
 
-#p5-canvas-container {
+.p5-canvas-container {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .canvas-background {
@@ -147,7 +174,7 @@ a:hover {
 
   margin: 30px 0;
 
-
+  width: 800px;
 }
 
 
@@ -157,7 +184,7 @@ a:hover {
   /* padding: 20px 0; */
   /* line-height: 20px; */
   padding: 20px 0;
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Forum", serif;
   /* Optional: Change font if needed */
 
 
@@ -222,10 +249,13 @@ img {
   position: absolute;
   top: 21vh;
   left: 8vw;
+  /* top: 0vh;
+  left: 0vw; */
   background-color: rgba(221, 217, 214, 0.584);
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Forum", serif;
   /* Optional: Change font if needed */
-
+  /* text-align: center;
+  margin: auto; */
 }
 
 #costume-yurt-txt {
@@ -233,7 +263,7 @@ img {
   top: 21vh;
   right: 5vw;
   background-color: rgba(221, 217, 214, 0.584);
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Forum", serif;
   /* Optional: Change font if needed */
 
 }
@@ -243,13 +273,13 @@ img {
   top: 21vh;
   left: 10vw;
   background-color: rgba(221, 217, 214, 0.584);
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Forum", serif;
   /* Optional: Change font if needed */
 
 }
 
 .aclonica-regular {
-  font-family: "Aclonica", sans-serif;
+  font-family: "Forum", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -268,7 +298,7 @@ img {
 }
 
 #costume-00:hover {
-  background-image: url("../assets/yerke00-h.png");
+  background-image: url("../assets/yerke-1.png");
 }
 
 #costume-01 {
@@ -276,7 +306,7 @@ img {
 }
 
 #costume-01:hover {
-  background-image: url("../assets/yerke01-h.png");
+  background-image: url("../assets/yerke-2.png");
 }
 
 #costume-02 {
@@ -284,5 +314,5 @@ img {
 }
 
 #costume-02:hover {
-  background-image: url("../assets/yerke02-h.png");
+  background-image: url("../assets/yerke-3.png");
 }
