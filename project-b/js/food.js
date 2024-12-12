@@ -77,8 +77,10 @@ class Button {
 
       push();
       translate(mouseX, mouseY);
-      textSize(20);
-      stroke(240, 0, 0);
+      textSize(22);
+
+      stroke(255, 0, 0);
+
       fill(255);
       textStyle(BOLD);
       text(this.name, 30, 0); // Display name next to the mouse
