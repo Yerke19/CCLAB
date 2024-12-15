@@ -93,7 +93,6 @@ a:hover {
   /* height: 150px; */
   text-align: center;
   padding-top: 15px;
-  /* Adjust this value to lower the title */
 
 }
 
@@ -101,9 +100,7 @@ a:hover {
   /* background-color: aquamarine; */
   font-size: 50px;
   font-family: "Forum", serif;
-  /* Optional: Change font if needed */
   margin-top: 15px;
-  /* Moves the title lower */
 
 
 }

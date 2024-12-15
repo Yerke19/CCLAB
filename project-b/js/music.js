@@ -10,7 +10,7 @@ function preload() {
 function setup() {
   let canvas = createCanvas(800, 500);
   canvas.parent("p5-canvas-container");
-  document.getElementById("p5-canvas-container").style.cursor = "none"; // Initially hide cursor
+  document.getElementById("p5-canvas-container").style.cursor = "none";
 }
 
 function draw() {
@@ -59,7 +59,7 @@ function onMouse() {
     line(mouseX - 75, mouseY, mouseX + 75, mouseY); // Line
     pop();
   } else {
-    // Show the pointer cursor when on "DOMBRA"
+    // Show the pointer cursor
     document.getElementById("p5-canvas-container").style.cursor = "pointer";
     // circle(mouseX, mouseY, 10);
   }
